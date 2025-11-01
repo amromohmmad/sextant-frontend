@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Banner from './Banner';
 import Exhibit from './Exhibit';
+import IpAddress from './IpAddress'; 
 
 function App() {
     return (
@@ -14,12 +15,12 @@ function App() {
                     </p>
                 </Exhibit>
 
-                <Exhibit heading="Features">
-                    <ul>
-                        <li>Interactive charts</li>
-                        <li>Customizable dashboards</li>
-                        <li>Real-time updates</li>
-                    </ul>
+                <Exhibit heading="Your Public IPv4 Address">
+                    <IpAddress version="v4" />
+                </Exhibit>
+
+                <Exhibit heading="Your Public IPv6 Address">
+                    <IpAddress version="v6" />
                 </Exhibit>
             </main>
         </div>
